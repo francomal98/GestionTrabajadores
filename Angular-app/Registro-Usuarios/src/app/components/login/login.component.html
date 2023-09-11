@@ -1,0 +1,27 @@
+<app-loader></app-loader>
+<p-card class="card-form" [style]="{ width: '65%' }">
+  <ng-template pTemplate="content">
+    <div class="container">
+      <form [formGroup]="formLogin">
+        <h2>Inicio de Sesión</h2>
+        <span class="p-float-label p-input-icon-left input-box" >
+          <i class="pi pi-user"></i>
+          <input pInputText id="username" formControlName="username" />
+          <label htmlFor="username">Usuario</label>
+        </span>
+        <span class="p-float-label p-input-icon-left input-box" >
+          <i class="pi pi-lock"></i>
+          <input pInputText id="password" formControlName="password"  type="password"/>
+          <label htmlFor="password">Contraseña</label>
+        </span>
+        <p-button label="Iniciar Sesión" styleClass="p-button-rounded" (click)="login()"></p-button>
+      </form>
+      <img src="../../../assets/images/rocket.png" width="350px">
+    </div>
+  </ng-template>
+</p-card>
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
