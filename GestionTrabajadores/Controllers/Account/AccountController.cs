@@ -112,10 +112,13 @@ namespace GestionTrabajadores.Controllers.Account
                         string nombreCompleto = $"{account.nombre} {account.apellidopaterno} {account.apellidomaterno}";
                         bool mailSend = mail.SendRecoveryActiveAccount(account.correo, nombreCompleto, "https://www.youtube.com/");
                         if (!mailSend)
+                        {
+                            
                             return StatusCode(StatusCodes.Status400BadRequest, new { error = "Error al mandar el correo para la activación de cuenta" });
+                        }
 
                         connection.Close();
-
+                        
                         return StatusCode(StatusCodes.Status201Created, new { message = "Usuario creado con éxto" });
                     }
                 }
