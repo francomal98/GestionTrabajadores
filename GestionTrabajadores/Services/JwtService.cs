@@ -7,7 +7,7 @@ namespace GestionTrabajadores.Services
 {
     public class JwtService
     {
-        public object GenerateJwt(string key, int idUser, string username) {
+        public object GenerateJwt(string key, int idUser, string username, string issuer, string audience) {
             try
             {
                 JwtSecurityTokenHandler handlerToken = new JwtSecurityTokenHandler();
@@ -21,7 +21,9 @@ namespace GestionTrabajadores.Services
                     }),
                     Expires = DateTime.Now.AddDays(1),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(_key),
-                                                    SecurityAlgorithms.HmacSha256Signature)
+                                                    SecurityAlgorithms.HmacSha256Signature),
+                    Issuer = issuer,
+                    Audience = audience
                 };
 
                 var token = handlerToken.CreateToken(tokenDes);

@@ -59,7 +59,7 @@ namespace GestionTrabajadores.Controllers.Account
 
                                     if (result)
                                     {
-                                        object response = jwt.GenerateJwt(configuration["SecreatKey"], userInfo[0].Id, userInfo[0].Usuario);
+                                        object response = jwt.GenerateJwt(configuration["SecreatKey"]!, userInfo[0].Id, userInfo[0].Usuario, configuration["JwtIssuer"]!, configuration["JwtApis:flutterWebApi"]!);
                                         return StatusCode(StatusCodes.Status200OK, new { response });
                                     } else
                                     {

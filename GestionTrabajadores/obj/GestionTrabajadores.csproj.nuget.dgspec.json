@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\franco\\Documentos\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj": {}
+    "C:\\Users\\usuario\\Documents\\Cosas\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj": {}
   },
   "projects": {
-    "D:\\franco\\Documentos\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj": {
+    "C:\\Users\\usuario\\Documents\\Cosas\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\franco\\Documentos\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Documents\\Cosas\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj",
         "projectName": "GestionTrabajadores",
-        "projectPath": "D:\\franco\\Documentos\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "D:\\franco\\Documentos\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores\\obj\\",
+        "projectPath": "C:\\Users\\usuario\\Documents\\Cosas\\GestionTrabajadores\\GestionTrabajadores\\GestionTrabajadores.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Documents\\Cosas\\GestionTrabajadores\\GestionTrabajadores\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -46,7 +46,7 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[7.0.13, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
